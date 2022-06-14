@@ -1,0 +1,55 @@
+.choice-box {
+	-fx-background-radius: 20px;
+	-fx-border-radius: 20px;
+	-fx-background-color: ROYALBLUE;
+}
+
+.choice-box > .label {
+	-fx-text-fill: #1c1c1c;
+}
+
+.choice-box .context-menu {
+	-fx-background-radius: 20px;
+	-fx-border-radius: 20px;
+	-fx-background-color: ROYALBLUE;
+	-fx-text-fill: #1c1c1c;
+}
+
+.choice-box .menu-item:focused {
+	-fx-background-radius: 20px;
+	-fx-border-radius: 20px;
+	-fx-background-color: CYAN;
+	-fx-text-fill: #1c1c1c;
+}
+
+.choice-box .menu-item > .label {
+	-fx-text-fill: #1c1c1c;
+}
+
+.choice-box .menu-item:focused > .label {
+	-fx-text-fill: #1c1c1c;
+}
+
+.button {
+	-fx-background-radius: 20px;
+	-fx-border-radius: 20px;
+	-fx-background-color: ROYALBLUE;
+	-fx-text-fill: #1c1c1c;
+}
+
+.label {
+	-fx-text-fill: #878787;
+}
+
+.separator *.line {
+	-fx-border-width: 0px;
+	-fx-background-color: #878787;
+}
+
+.slider > .track {
+	-fx-background-color: #878787;
+}
+
+.slider > .thumb {
+	-fx-background-color: CYAN;
+}

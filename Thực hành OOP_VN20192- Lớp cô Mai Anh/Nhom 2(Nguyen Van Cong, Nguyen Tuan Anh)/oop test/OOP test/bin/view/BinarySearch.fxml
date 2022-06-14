@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="binarySearch.BinarySearchController">
+   <top>
+      <AnchorPane prefHeight="93.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="345.0" layoutY="31.0" prefHeight="32.0" prefWidth="62.0" text="Array" textFill="RED">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Button layoutX="702.0" layoutY="20.0" mnemonicParsing="false" onAction="#ArrayInput" prefHeight="54.0" prefWidth="82.0" text="ENTER" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <TextField fx:id="arrayTextField" layoutX="426.0" layoutY="20.0" prefHeight="54.0" prefWidth="267.0" promptText="Input Array" styleClass="textfield">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#goBack" prefHeight="54.0" prefWidth="76.0" text="BACK" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button layoutX="790.0" layoutY="20.0" mnemonicParsing="false" onAction="#reset" prefHeight="54.0" prefWidth="85.0" text="RESET" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button layoutX="1000.0" layoutY="20.0" mnemonicParsing="false" onAction="#CellCircle" prefHeight="54.0" prefWidth="76.0" text="Circle" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button layoutX="900.0" layoutY="20.0" mnemonicParsing="false" onAction="#CellSquare" prefHeight="54.0" prefWidth="76.0" text="Square" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="87.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="687.0" layoutY="15.0" mnemonicParsing="false" onAction="#binarySearch" prefHeight="54.0" prefWidth="93.0" text="SEARCH" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <TextField fx:id="searchTextField" layoutX="494.0" layoutY="15.0" prefHeight="54.0" prefWidth="99.0" promptText="Search" styleClass="textfield">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Button layoutX="604.0" layoutY="15.0" mnemonicParsing="false" onAction="#next" prefHeight="54.0" prefWidth="73.0" text="NEXT" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button layoutX="789.0" layoutY="16.0" mnemonicParsing="false" onAction="#delete" prefHeight="52.0" prefWidth="90.0" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="493.0" prefWidth="65.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="paneShow" layoutX="5.0" layoutY="29.0" prefHeight="276.0" prefWidth="1024.0">
+               <children>
+                  <Button layoutX="7.0" layoutY="90.0" mnemonicParsing="false" onAction="#sort" prefHeight="54.0" prefWidth="70.0" text="SORT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="showKetQua" layoutX="345.0" layoutY="210.0" prefHeight="52.0" prefWidth="578.0" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="leftLabel" layoutX="297.0" layoutY="392.0" prefHeight="28.0" prefWidth="100.0" text="LEFT" textFill="#ffffd0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="midLabel" layoutX="498.0" layoutY="391.0" prefHeight="30.0" prefWidth="96.0" text="MID" textFill="#ffffd0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="rightLabel" layoutX="698.0" layoutY="392.0" prefHeight="28.0" prefWidth="102.0" text="RIGHT" textFill="#ffffd0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
