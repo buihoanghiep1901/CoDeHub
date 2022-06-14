@@ -1,0 +1,95 @@
+.start {
+    -fx-border-color: green;
+    -fx-border-width: 3.0px;
+    -fx-background-color:derive(green,0.9);
+    
+}
+.goal {
+    -fx-border-color: red;
+    -fx-border-width: 3.0px;
+    -fx-background-color:derive(red,0.9);
+}
+.open {
+    /*-fx-background-color: rgba(255,0,0,0.1);*/
+    -fx-background-color: #99ccff;
+}
+.closed {
+    /*-fx-background-color: rgba(0,255,0,0.1);*/
+    -fx-background-color: #cc6699;
+}
+/* important order: path must be after open and closed because a cell can be both. the last in the css overlaps the previous styles, no matter how you add them to the styleclass list */
+.path {
+    /*-fx-background-color:derive(dodgerblue,0.9);*/
+    -fx-background-color:#A7FF71;
+}
+/* important order: traversable must be after path because a cell can be both. the last in the css overlaps the previous styles, no matter how you add them to the styleclass list. traversable overrides path when you paint over a path */
+.traversable {
+    /*-fx-border-color: dodgerblue;*/
+    -fx-border-color: yellow;
+    -fx-border-width: 1.0px;
+}
+/* important order: obstacle must be after path because a cell can be both. the last in the css overlaps the previous styles, no matter how you add them to the styleclass list. obstacle overrides path when you paint over a path */
+.obstacle {
+    -fx-border-color: black;
+    -fx-border-width: 0.5px;
+    -fx-background-color:derive(black,0.9);
+    -fx-text-fill: black;
+}
+.label-f {
+	-fx-font-size: 22.0;
+	-fx-font-weight: bold;
+}
+.label-g {
+	-fx-font-size: 12.0;
+}
+.label-h {
+	-fx-font-size: 12.0;
+}
+
+
+
+.root {
+	-fx-background-image: url("../../../src/view/abc.jpg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 120.0%;
+}
+
+.button {
+	-fx-padding: 15.0;
+	-fx-background-color: #666699;
+	-fx-border-width: 2.0;
+    -fx-border-color: #ffff99;
+    -fx-border-radius:7.0px;
+    -fx-background-radius:7.0px;
+    
+    -fx-text-fill: white;
+}
+
+.button:hover {
+	-fx-border-width: 4.0;
+	-fx-background-color: #990033;
+    -fx-border-color: #99ffcc;
+}
+
+.textfield {
+	-fx-background-color: #990033;
+	-fx-border-width: 2.0;
+    -fx-border-color: #ffff99;
+    -fx-border-radius:7.0px;
+    -fx-background-radius:7.0px;
+}
+
+.textfield:hover {
+	-fx-border-width: 4.0;
+    -fx-border-color: #99ffcc;
+    -fx-background-color: #ffffcc;
+}
+
+
+.check-box {
+	-fx-text-fill: white;
+}
+
+.label {
+	-fx-text-fill: white;
+}

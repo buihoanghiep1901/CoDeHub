@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerHomePage">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="158.0" layoutY="488.0" mnemonicParsing="false" onAction="#queue" prefHeight="67.0" prefWidth="185.0" style="-fx-background-color: lightblue; -fx-border-color: blue;" text="Queue">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="497.0" layoutY="488.0" mnemonicParsing="false" onAction="#arraylist" prefHeight="67.0" prefWidth="185.0" style="-fx-background-color: violet; -fx-border-color: darkviolet;" text="ArrayList">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="336.0" layoutY="202.0" text="Visualization Application">
+         <font>
+            <Font size="54.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6476190476190476">
+               <stops>
+                  <Stop color="#612c78" />
+                  <Stop color="#3c27ab" offset="0.007662835249042145" />
+                  <Stop color="#db1db1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="hashtable" layoutX="829.0" layoutY="488.0" mnemonicParsing="false" onAction="#hashtable" prefHeight="67.0" prefWidth="185.0" style="-fx-background-color: pink; -fx-border-color: red;" text="HashTable">
+         <font>
+            <Font size="30.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0"
+	prefWidth="992.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Button layoutX="379.0" layoutY="161.0" mnemonicParsing="false"
+			prefHeight="42.0" prefWidth="226.0" text="Sequential Search" />
+		<Button layoutX="377.0" layoutY="265.0" mnemonicParsing="false"
+			prefHeight="42.0" prefWidth="226.0" text="Binary Search" />
+		<Button layoutX="380.0" layoutY="358.0" mnemonicParsing="false"
+			prefHeight="42.0" prefWidth="226.0" text="A*" />
+	</children>
+</AnchorPane>
